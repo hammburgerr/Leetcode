@@ -1,2 +1,2 @@
 # Leetcode
-Leetcode problems and reviews 🍔
+🍔 Leetcode problems and reviews
