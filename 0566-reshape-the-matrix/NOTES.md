@@ -14,7 +14,7 @@
 
 ##### 2. reshape is possible
 1. 📕 make an initializer list with shape (r, c)
-2. put the elements of flattened matrix into the reshaped matrix
+2. 📕 put the elements of flattened matrix into the reshaped matrix
 
 # 📕 To memorize
 ##### 1. flattening: 
@@ -28,3 +28,10 @@ structure: [num / for sublist in mat / for num in sublist ]
 ##### 2. Initializer list:
     'list_ = [[0]*3 for _ in range(3)]'
 - result: [[0,0,0], [0,0,0], [0,0,0]]
+
+##### 3. putting elements according to the row & column
+    '    for i in range(r):
+        for j in range(c):
+            zero_mat[i][j] = flattened_mat[i * c + j]'
+- i * c calculates the index offset due to the full rows before the current row.
+- j adds the column index within the current row.
